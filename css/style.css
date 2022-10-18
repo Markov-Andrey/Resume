@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Zing Rust";
+  src: url("../fonts/ofont.ru_Zing Rust.ttf") format("truetype");
+}
+section {
+  margin: 50px 10%;
+  padding: 10px 25px;
+  background: PaleGreen;
+  border: 1px solid Black;
+  border-radius: 10px;
+}
+
+p {
+  margin: 10px;
+  padding: 10px 25px;
+  background: SpringGreen;
+  border: 1px solid Black;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "Zing Rust";
+}
