@@ -1,0 +1,45 @@
+header
+  display: grid
+  grid-template-columns: 30% 40% 5% 25%
+
+.titlePage
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  font-size: 50px
+  animation: go .3s
+  color: $white
+  
+.titlePage span:nth-child(1)
+  color: $orange
+.titlePage span:nth-child(4)
+  color: $blue
+  border-right: 3px solid white
+  animation: cursor 0.75s step-end infinite, printed_text .5s steps(7, end)
+  overflow: hidden
+  white-space: nowrap
+.titlePage span:nth-child(5)
+  color: $white
+
+@keyframes cursor
+  0%
+    border-color: white
+  50%
+    border-color: transparent
+  100%
+    border-color: white
+
+@keyframes go
+  0%
+    opacity: 0
+  75%
+    opacity: 0.5
+  100%
+    opacity: 1
+
+@keyframes printed_text
+  from
+    width: 0
+  to
+    width: 17%

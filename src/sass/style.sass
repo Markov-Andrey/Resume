@@ -1,24 +1,85 @@
+//Color
+$page: #23242e
+$white: #fff
+$gold: #ecc441
+$gray: #747474
+$blue: #93e0ff
+$orange: #ffae00
+$text: #df9d63
+
+//импорт компонентов
+@import "components/header"
+
 *
-    margin: 0
-    padding: 0
+  margin: 0
+  padding: 0
 
 @font-face
-    font-family: "Zing Rust"
-    src: url("../fonts/ofont.ru_Zing Rust.ttf") format("truetype")
+  font-family: "Zing Rust"
+  src: url("../fonts/ofont.ru_Zing Rust.ttf") format("truetype")
 
-section
-    margin: 50px 10%
-    padding: 10px 25px
-    background: PaleGreen
-    border: 1px solid Black
-    border-radius: 10px
+@font-face
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
 
-p
-    margin: 10px
-    padding: 10px 25px
-    background: SpringGreen
-    border: 1px solid Black
-    border-radius: 10px
+body
+  //не выделяемый текст на странице
+  background: $page
+  font-size: 20px
+  font-family: "Consolas"
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  user-select: none
 
 h1
-    font-family: "Zing Rust"
+  font-size: 35px
+  color: $gold
+
+.text
+  font-weight: 600
+  color: $text
+.text:before,.text:after
+  content: "'"
+  color: $white
+
+.key
+  font-weight: 600
+  color: $blue
+.key:before,.key:after
+  content: "'"
+  color: $white
+
+.back
+  color: $gray
+  font-size: 25px
+  font-weight: 700
+
+.variable
+  color: $white
+  font-size: 25px
+  font-weight: 700
+
+.variable:first-letter
+  color: $blue
+
+a
+  color: $white
+  cursor: pointer
+  font-size: 25px
+a:hover
+  color: $gold
+a:active
+  color: $orange
+
+section
+  color: $white
+  margin: 50px 10%
+  padding: 10px 25px
+  border: 1px solid Black
+  border-radius: 10px
+section p
+  color: $orange
+
+.col-3
+  display: grid
+  grid-template-columns: 12% 3% 25%

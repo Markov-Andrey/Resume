@@ -1,2 +1,19 @@
 header
-    p Header
+  div
+    div.back &lt;?php
+    div.back use Resume\CurriculumVitae as CV;
+    div.back use Resume\Page as Page;
+    div.back $markov = new CV();
+  div.titlePage
+    span Page
+    span ::Show
+    span ('
+    span About
+    span ')
+  div
+    div.variable $markov
+  div
+    p
+      a.btn -&gt;about()
+    p
+      a.btn -&gt;contacts()

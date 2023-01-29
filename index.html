@@ -2,20 +2,63 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="./css/style.css" rel="stylesheet">
-    <title>Резюме Марков А.В.</title>
+    <link href="css/style.css" rel="stylesheet">
+    <title>$markov-&gt;About</title>
   </head>
   <body>
     <header>
-      <p>Header</p>
+      <div>
+        <div class="back">&lt;?php</div>
+        <div class="back">use Resume\CurriculumVitae as CV;</div>
+        <div class="back">use Resume\Page as Page;</div>
+        <div class="back">$markov = new CV();</div>
+      </div>
+      <div class="titlePage"><span>Page</span><span>::Show</span><span>('</span><span>About</span><span>')</span></div>
+      <div>
+        <div class="variable">$markov</div>
+      </div>
+      <div>
+        <p><a class="btn">-&gt;about()</a></p>
+        <p><a class="btn">-&gt;contacts()</a></p>
+      </div>
     </header>
     <section>
-      <h1>Back-end Developer</h1>
-      <p>Марков Андрей, ♂, 28 лет</p>
+      <h1>->Info()</h1>
+      <p>[</p>
+      <div class="col-3">
+        <div class="key">name</div>
+        <div>=></div>
+        <div class="text">Markov Andrei Valerievich</div>
+        <div class="key">age</div>
+        <div>=></div>
+        <div class="text">28</div>
+        <div class="key">specialization</div>
+        <div>=></div>
+        <div class="text">Back-end Developer</div>
+      </div>
+      <p>];</p>
     </section>
     <section>
-      <h1>Местоположение:</h1>
-      <p>РБ, Минск, Октябрьский район, Minsk-World</p>
+      <h1>->Location()</h1>
+      <p>[</p>
+      <div class="col-3">
+        <div class="key">country</div>
+        <div>=></div>
+        <div class="text">Republic of Belarus</div>
+        <div class="key">city</div>
+        <div>=></div>
+        <div class="text">Minsk</div>
+        <div class="key">district</div>
+        <div>=></div>
+        <div class="text">Oktyabrsky</div>
+        <div class="key">street</div>
+        <div>=></div>
+        <div class="text">L.Levina</div>
+        <div class="key">house</div>
+        <div>=></div>
+        <div class="text">11</div>
+      </div>
+      <p>];</p>
     </section>
     <section>
       <h1>Места работы:</h1>

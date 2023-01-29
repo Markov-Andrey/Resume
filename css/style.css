@@ -1,3 +1,105 @@
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 40% 5% 25%;
+  grid-template-columns: 30% 40% 5% 25%;
+}
+
+.titlePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 50px;
+  -webkit-animation: go 0.3s;
+          animation: go 0.3s;
+  color: #fff;
+}
+
+.titlePage span:nth-child(1) {
+  color: #ffae00;
+}
+
+.titlePage span:nth-child(4) {
+  color: #93e0ff;
+  border-right: 3px solid white;
+  -webkit-animation: cursor 0.75s step-end infinite, printed_text 0.5s steps(7, end);
+          animation: cursor 0.75s step-end infinite, printed_text 0.5s steps(7, end);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.titlePage span:nth-child(5) {
+  color: #fff;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+@-webkit-keyframes go {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes go {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes printed_text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17%;
+  }
+}
+@keyframes printed_text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,22 +109,89 @@
   font-family: "Zing Rust";
   src: url("../fonts/ofont.ru_Zing Rust.ttf") format("truetype");
 }
-section {
-  margin: 50px 10%;
-  padding: 10px 25px;
-  background: PaleGreen;
-  border: 1px solid Black;
-  border-radius: 10px;
+@font-face {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
-
-p {
-  margin: 10px;
-  padding: 10px 25px;
-  background: SpringGreen;
-  border: 1px solid Black;
-  border-radius: 10px;
+body {
+  background: #23242e;
+  font-size: 20px;
+  font-family: "Consolas";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 h1 {
-  font-family: "Zing Rust";
+  font-size: 35px;
+  color: #ecc441;
+}
+
+.text {
+  font-weight: 600;
+  color: #df9d63;
+}
+
+.text:before, .text:after {
+  content: "'";
+  color: #fff;
+}
+
+.key {
+  font-weight: 600;
+  color: #93e0ff;
+}
+
+.key:before, .key:after {
+  content: "'";
+  color: #fff;
+}
+
+.back {
+  color: #747474;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.variable {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.variable:first-letter {
+  color: #93e0ff;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+a:hover {
+  color: #ecc441;
+}
+
+a:active {
+  color: #ffae00;
+}
+
+section {
+  color: #fff;
+  margin: 50px 10%;
+  padding: 10px 25px;
+  border: 1px solid Black;
+  border-radius: 10px;
+}
+
+section p {
+  color: #ffae00;
+}
+
+.col-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12% 3% 25%;
+  grid-template-columns: 12% 3% 25%;
 }
