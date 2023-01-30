@@ -1,8 +1,14 @@
 header {
+  position: sticky;
+  top: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 40% 5% 25%;
   grid-template-columns: 30% 40% 5% 25%;
+  -webkit-box-shadow: 1px 10px 30px #11111f;
+          box-shadow: 1px 10px 30px #11111f;
+  background: #11111f;
+  padding: 0 1%;
 }
 
 .titlePage {
