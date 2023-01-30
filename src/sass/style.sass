@@ -1,7 +1,7 @@
 //Color
 $page: #23242e
 $white: #fff
-$gold: #ecc441
+$gold: #ffd034
 $gray: #747474
 $blue: #93e0ff
 $orange: #ffae00
@@ -9,6 +9,7 @@ $text: #df9d63
 
 //импорт компонентов
 @import "components/header"
+@import "components/footer"
 
 *
   margin: 0
@@ -58,7 +59,6 @@ h1
   color: $white
   font-size: 25px
   font-weight: 700
-
 .variable:first-letter
   color: $blue
 
@@ -79,7 +79,31 @@ section
   border-radius: 10px
 section p
   color: $orange
+section span
+  color: $gray
+section div
+  color: $white
 
-.col-3
+.array-3
   display: grid
-  grid-template-columns: 12% 3% 25%
+  grid-template-columns: 8% 3% 20%
+
+.json-3
+  display: grid
+  row-gap: 10px
+  grid-template-columns: 30% 5% 65%
+
+.col-2
+  display: grid
+  grid-template-columns: 50% 50%
+
+.border
+  border: dotted black 1px
+  border-collapse: collapse
+  border-radius: 10px
+  margin: 10px
+  padding: 5px
+  background: #1d1d1d
+
+li
+  margin-left: 7%

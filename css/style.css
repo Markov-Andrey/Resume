@@ -100,6 +100,11 @@ header {
     width: 17%;
   }
 }
+.foot {
+  text-align: center;
+  color: #ffd034;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -124,7 +129,7 @@ body {
 
 h1 {
   font-size: 35px;
-  color: #ecc441;
+  color: #ffd034;
 }
 
 .text {
@@ -170,7 +175,7 @@ a {
 }
 
 a:hover {
-  color: #ecc441;
+  color: #ffd034;
 }
 
 a:active {
@@ -189,9 +194,45 @@ section p {
   color: #ffae00;
 }
 
-.col-3 {
+section span {
+  color: #747474;
+}
+
+section div {
+  color: #fff;
+}
+
+.array-3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 12% 3% 25%;
-  grid-template-columns: 12% 3% 25%;
+  -ms-grid-columns: 8% 3% 20%;
+  grid-template-columns: 8% 3% 20%;
+}
+
+.json-3 {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10px;
+  -ms-grid-columns: 30% 5% 65%;
+  grid-template-columns: 30% 5% 65%;
+}
+
+.col-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+
+.border {
+  border: dotted black 1px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  background: #1d1d1d;
+}
+
+li {
+  margin-left: 7%;
 }

@@ -23,174 +23,323 @@
       </div>
     </header>
     <section>
-      <h1>->Info()</h1>
-      <p>[</p>
-      <div class="col-3">
-        <div class="key">name</div>
-        <div>=></div>
-        <div class="text">Markov Andrei Valerievich</div>
-        <div class="key">age</div>
-        <div>=></div>
-        <div class="text">28</div>
-        <div class="key">specialization</div>
-        <div>=></div>
-        <div class="text">Back-end Developer</div>
+      <h1>->Info()</h1><span>//array</span>
+      <div class="border">
+        <p>[</p>
+        <div class="array-3">
+          <div class="key">name</div>
+          <div>=></div>
+          <div class="text">Markov Andrei Valerievich</div>
+          <div class="key">age</div>
+          <div>=></div>
+          <div class="text">29</div>
+          <div class="key">speciality</div>
+          <div>=></div>
+          <div class="text">PHP Back-end Developer</div>
+        </div>
+        <p>];</p>
       </div>
-      <p>];</p>
     </section>
     <section>
-      <h1>->Location()</h1>
-      <p>[</p>
-      <div class="col-3">
-        <div class="key">country</div>
-        <div>=></div>
-        <div class="text">Republic of Belarus</div>
-        <div class="key">city</div>
-        <div>=></div>
-        <div class="text">Minsk</div>
-        <div class="key">district</div>
-        <div>=></div>
-        <div class="text">Oktyabrsky</div>
-        <div class="key">street</div>
-        <div>=></div>
-        <div class="text">L.Levina</div>
-        <div class="key">house</div>
-        <div>=></div>
-        <div class="text">11</div>
+      <h1>->Location()</h1><span>//array</span>
+      <div class="border">
+        <p>[</p>
+        <div class="array-3">
+          <div class="key">country</div>
+          <div>=></div>
+          <div class="text">Republic of Belarus</div>
+          <div class="key">city</div>
+          <div>=></div>
+          <div class="text">Minsk</div>
+          <div class="key">district</div>
+          <div>=></div>
+          <div class="text">Oktyabrsky</div>
+          <div class="key">street</div>
+          <div>=></div>
+          <div class="text">L.Levina</div>
+          <div class="key">house</div>
+          <div>=></div>
+          <div class="text">11</div>
+        </div>
+        <p>];</p>
       </div>
-      <p>];</p>
     </section>
     <section>
-      <h1>Места работы:</h1>
-      <p>
-        ГЛХУ "Чериковский лесхоз" <br>
-        Мастер леса <br>
-        Апрель 2016 - Май 2018 (2 года 2 месяца) <br>
-        Достижение: <br>
-        Участовал в разработке буреломов в Червенском и Смолевичском районах в 2017 г. <br>
-      </p>
-      <p>
-        СООО "Мобильные ТелеСистемы" <br>
-        Специалист по работе с клиентами <br>
-        Сентябрь 2018 - Октябрь 2018 (2 месяца) <br>
-      </p>
-      <p>
-        ЧТУП "Бурштат" <br>
-        Маркетолог <br>
-        Апрель 2019 - Июнь 2019 (3 месяца) <br>
-      </p>
-      <p>
-        "Белгосохота" <br>
-        Инженер отдела охотоустройства и научно-исследовательских работ <br>
-        Октябрь 2019 - по н.в. (3 года 1 месяц) <br>
-        Достижение: <br>
-        Самостоятельно разработал методические указания для работы в программе MapInfo <br>
-      </p>
+      <h1>->Experience()</h1><span>//json_decode
+        <div class="col-2">
+          <div class="border">
+            <p>{</p>
+            <div class="json-3">
+              <div class="key">job</div>
+              <div>:</div>
+              <div class="text">The State Forestry Institution<br>"Cherikovsky Forestry"</div>
+              <div class="key">position</div>
+              <div>:</div>
+              <div class="text">Forest master</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">April 2016 - May 2018<br>(2 years 2 months)</div>
+              <div class="key">achieve-<br>ments</div>
+              <div>:</div>
+              <div class="text">1. Active participation in the elimination of windbreaks in the Cherven and Smolevichi districts in 2017</div>
+            </div>
+            <p>},</p>
+          </div>
+          <div class="border">
+            <p>{</p>
+            <div class="json-3">
+              <div class="key">job</div>
+              <div>:</div>
+              <div class="text">Mobile TeleSystems, JLLC</div>
+              <div class="key">position</div>
+              <div>:</div>
+              <div class="text">Customer service manager</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">September 2018 - October 2018<br>(2 months)</div>
+            </div>
+            <p>},</p>
+          </div>
+          <div class="border">
+            <p>{</p>
+            <div class="json-3">
+              <div class="key">job</div>
+              <div>:</div>
+              <div class="text">BURSHTAT</div>
+              <div class="key">position</div>
+              <div>:</div>
+              <div class="text">Marketer</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">September 2018 - October 2018<br>(2 months)</div>
+            </div>
+            <p>},</p>
+          </div>
+          <div class="border">
+            <p>{</p>
+            <div class="json-3">
+              <div class="key">job</div>
+              <div>:</div>
+              <div class="text">Hunting Republician Unitary Enterprise<br>"BELGOSOKHOTA"</div>
+              <div class="key">position</div>
+              <div>:</div>
+              <div class="text">Hunting management and research engineer</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">October 2019 - February 2023<br>(3 years 4 months)</div>
+              <div class="key">achieve-<br>ments</div>
+              <div>:</div>
+              <div class="text">
+                1. Merch design development;<br>2. Software setup when moving to a remote location (due to Covid-19);<br>
+                3. Development of guidelines for work in the department;<br>
+                4. Training and adaptation of new employees in the department
+              </div>
+            </div>
+            <p>}</p>
+          </div>
+        </div></span>
     </section>
     <section>
-      <h1>Образование:</h1>
-      <p>
-        Базовое: <br>
-        УО СШ № 1 г. Чериков <br>
-        2010 г. <br>
-      </p>
-      <p>
-        Высшее: <br>
-        БГСХА, г.Горки <br>
-        Эколог с/х <br>
-        2016 г. <br>
-        Достижение: <br>
-        Получил 1-ю категорию в республиканском конкурсе научных работ (2014г.) <br>
-      </p>
-      <p>
-        Курсы: <br>
-        1. РУЦ-Лес, г.Минск <br>
-        Повышение квалификации - Мастер леса <br>
-        2018 г. <br>
-        2. БГТУ, г.Минск <br>
-        Переподготовка - Инженер лесного хозяйства <br>
-        2018 г. <br>
-        3. Моя IT школа, г.Минск <br>
-        Курс по PHP разработке <br>
-        2023 г. <br>
-      </p>
+      <h1>->Education()</h1><span>//json_decode
+        <div class="col-2">
+          <div class="border">
+            <p>{</p>
+            <p>//BASIC</p>
+            <div class="json-3">
+              <div class="key">institute</div>
+              <div>:</div>
+              <div class="text">Secondary School #1</div>
+              <div class="key">city</div>
+              <div>:</div>
+              <div class="text">Cherikov</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">2010</div>
+            </div>
+            <p>},</p>
+          </div>
+          <div class="border">
+            <p>{</p>
+            <p>//HIGHER</p>
+            <div class="json-3">
+              <div class="key">institute</div>
+              <div>:</div>
+              <div class="text">Belarusian State Agricultural Academy</div>
+              <div class="key">city</div>
+              <div>:</div>
+              <div class="text">Gorki</div>
+              <div class="key">speciality</div>
+              <div>:</div>
+              <div class="text">Ecologist</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">2016</div>
+            </div>
+            <p>},</p>
+          </div>
+          <div class="border">
+            <p>{</p>
+            <p>//COURSES</p>
+            <div class="json-3">
+              <div class="key">institute</div>
+              <div>:</div>
+              <div class="text">Republican Center for Advanced Training of Managers and Forestry Specialists</div>
+              <div class="key">city</div>
+              <div>:</div>
+              <div class="text">Zhdanovichi</div>
+              <div class="key">speciality</div>
+              <div>:</div>
+              <div class="text">Forest master</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">2018</div>
+            </div>
+            <p>},</p>
+          </div>
+          <div class="border">
+            <p>{</p>
+            <p>//COURSES</p>
+            <div class="json-3">
+              <div class="key">institute</div>
+              <div>:</div>
+              <div class="text">Belarusian State Technological University</div>
+              <div class="key">city</div>
+              <div>:</div>
+              <div class="text">Minsk</div>
+              <div class="key">speciality</div>
+              <div>:</div>
+              <div class="text">Forestry engineer</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">2018</div>
+            </div>
+            <p>},</p>
+          </div>
+          <div class="border">
+            <p>{</p>
+            <p>//COURSES</p>
+            <div class="json-3">
+              <div class="key">institute</div>
+              <div>:</div>
+              <div class="text">My IT School</div>
+              <div class="key">city</div>
+              <div>:</div>
+              <div class="text">Minsk</div>
+              <div class="key">speciality</div>
+              <div>:</div>
+              <div class="text">PHP Back-end Developer</div>
+              <div class="key">date</div>
+              <div>:</div>
+              <div class="text">2023</div>
+            </div>
+            <p>},</p>
+          </div>
+        </div></span>
     </section>
     <section>
-      <h1>Навыки</h1>
-      <ol>
-        <li>HardSkills
-          <ul> 
-            <li>Иностранные языки
-              <ul>
-                <li>Английский - Pre-Intermediate</li>
-                <li>Немецкий - Elementary</li>
-              </ul>
-            </li>
-            <li>Языки программирования
-              <ul>
-                <li>JavaScript</li>
-                <li>PHP</li>
-              </ul>
-            </li>
-            <li>Framework
-              <ul>
-                <li>Laravel (для PHP)</li>
-              </ul>
-            </li>
-            <li>Языки верстки/стилей
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-            </li>
-            <li>Препроцессоры
-              <ul>
-                <li>PUG (для HTML)</li>
-                <li>SASS (для CSS)</li>
-              </ul>
-            </li>
-            <li>Контроль версий
-              <ul>
-                <li>GIT (GITHUB)</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>SoftSkills
-          <ul>
-            <li>Коммуникабельность
-              <ul> 
-                <li>Умение слушать</li>
-                <li>Четкая речь</li>
-              </ul>
-            </li>
-            <li>Лидерство
-              <ul>
-                <li>Ответственность</li>
-                <li>Базовый тайм-менеджмент</li>
-                <li>Работа на результат</li>
-                <li>Многозадачность</li>
-              </ul>
-            </li>
-            <li>Креативность
-              <ul>
-                <li>Критическое мышление</li>
-                <li>Доверие</li>
-                <li>Терпение</li>
-              </ul>
-            </li>
-            <li>Персональные навыки
-              <ul>
-                <li>Честность</li>
-                <li>Желание учиться</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ol>
+      <h1>->Skills()</h1><span>//Methods
+        <div class="col-2">
+          <div class="border">
+            <h1>->HardSkills('Main')</h1><span>//Foreach() {$key. '$val'}</span>
+            <p>[
+              <ol>
+                <li>Programming languages
+                  <ul>
+                    <li class="text">PHP</li>
+                    <li class="text">JavaScript</li>
+                  </ul>
+                </li>
+                <li>Framework
+                  <ul>
+                    <li class="text">Laravel</li>
+                  </ul>
+                </li>
+                <li>Style Layout Language
+                  <ul>
+                    <li class="text">HTML</li>
+                    <li class="text">CSS</li>
+                  </ul>
+                </li>
+                <li>Preprocessors
+                  <ul>
+                    <li class="text">PUG</li>
+                    <li class="text">SASS</li>
+                  </ul>
+                </li>
+                <li>Programming Libraries
+                  <ul>
+                    <li class="text">JQuery</li>
+                    <li class="text">AJAX</li>
+                  </ul>
+                </li>
+                <li>Database
+                  <ul>
+                    <li class="text">MySQL</li>
+                  </ul>
+                </li>
+                <li>Version control
+                  <ul>
+                    <li class="text">GIT (GitHub)</li>
+                  </ul>
+                </li>
+              </ol>
+            </p>
+            <p>];</p>
+          </div>
+          <div class="border">
+            <h1>->HardSkills('Language')</h1><span>//array</span>
+            <p>[</p>
+            <div class="json-3">
+              <div class="key">Russian (ru-RU)</div>
+              <div>=></div>
+              <div class="text">Native</div>
+              <div class="key">Belarusian (be-BE)</div>
+              <div>=></div>
+              <div class="text">Native</div>
+              <div class="key">English (en-US)</div>
+              <div>=></div>
+              <div class="text">Pre-Intermediate</div>
+              <div class="key">Deutsch (de-DE)</div>
+              <div>=></div>
+              <div class="text">Elementary</div>
+            </div>
+            <p>];</p>
+          </div>
+          <div class="border">
+            <h1>->SoftSkills()</h1><span>//Foreach() {$key. '$val'}</span>
+            <p>[
+              <ol>
+                <li>Sociability
+                  <ul>
+                    <li class="text">The ability to listen</li>
+                    <li class="text">Clear speech</li>
+                  </ul>
+                </li>
+                <li>Leadership
+                  <ul>
+                    <li class="text">Responsibility</li>
+                    <li class="text">Basic time management</li>
+                    <li class="text">Work for the result</li>
+                    <li class="text">Multitasking</li>
+                  </ul>
+                </li>
+                <li>Personal Skills
+                  <ul>
+                    <li class="text">Critical thinking</li>
+                    <li class="text">Trust</li>
+                    <li class="text">Patience</li>
+                    <li class="text">Honesty</li>
+                    <li class="text">Eagerness to learn</li>
+                  </ul>
+                </li>
+              </ol>
+            </p>
+            <p>];</p>
+          </div>
+        </div></span>
     </section>
     <footer>
-      <p>Footer</p>
+      <p class="foot">Made A.Markov with 🤍 in 2023</p>
     </footer>
   </body>
 </html>
