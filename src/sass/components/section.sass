@@ -1,0 +1,38 @@
+section
+  color: $white
+  margin: 50px 10%
+  padding: 10px 25px
+  border: 1px solid Black
+  border-radius: 10px
+
+section p
+  color: $orange
+
+section span
+  display: block
+  color: $gray
+
+section div
+  color: $white
+
+.hidden
+  opacity: 0
+  filter: blur(5px)
+  transform: translateX(-3%)
+  transition: all .7s
+
+@for $i from 2 to 10
+  $num: $i * 200
+
+  .subhidden:nth-child(#{$i})
+    transition-delay: #{$num}ms
+
+.show
+  opacity: 1
+  filter: blur(0)
+  transform: translateX(0)
+
+@media(prefers-reduced-motion)
+  .hidden 
+    transition: none
+  

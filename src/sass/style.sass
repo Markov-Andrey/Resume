@@ -11,14 +11,11 @@ $text: #df9d63
 //импорт компонентов
 @import "components/header"
 @import "components/footer"
+@import "components/section"
 
 *
   margin: 0
   padding: 0
-
-@font-face
-  font-family: "Zing Rust"
-  src: url("../fonts/ofont.ru_Zing Rust.ttf") format("truetype")
 
 @font-face
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
@@ -33,23 +30,42 @@ body
   -webkit-user-select: none
   user-select: none
 
+a,h1
+  transition: .2s
+  display: inline-block
+  cursor: pointer
+  color: $white
+a
+  font-size: 25px
 h1
   font-size: 35px
+a:hover,h1:hover
   color: $gold
+a:active,h1:active
+  color: $orange
+
+
+.box_rotate
+  animation: .5s animate forwards
+@keyframes animate
+  0%
+    transform: rotateX(0)
+  50%
+    transform: rotateX(90deg)
+  100%
+    transform: rotateX(0)
 
 .text
   font-weight: 600
   color: $text
 .text:before,.text:after
   content: "'"
-  color: $white
 
 .key
   font-weight: 600
   color: $blue
 .key:before,.key:after
   content: "'"
-  color: $white
 
 .back
   color: $gray
@@ -63,31 +79,9 @@ h1
 .variable:first-letter
   color: $blue
 
-a
-  color: $white
-  cursor: pointer
-  font-size: 25px
-a:hover
-  color: $gold
-a:active
-  color: $orange
-
-section
-  color: $white
-  margin: 50px 10%
-  padding: 10px 25px
-  border: 1px solid Black
-  border-radius: 10px
-section p
-  color: $orange
-section span
-  color: $gray
-section div
-  color: $white
-
 .array-3
   display: grid
-  grid-template-columns: 8% 3% 20%
+  grid-template-columns: 10% 3% 20%
 
 .json-3
   display: grid

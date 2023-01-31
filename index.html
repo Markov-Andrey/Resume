@@ -22,17 +22,20 @@
         <p><a class="btn">-&gt;contacts()</a></p>
       </div>
     </header>
-    <section>
+    <section class="hidden">
       <h1>->Info()</h1><span>//array</span>
-      <div class="border">
+      <div class="border hidden">
         <p>[</p>
         <div class="array-3">
           <div class="key">name</div>
           <div>=></div>
           <div class="text">Markov Andrei Valerievich</div>
-          <div class="key">age</div>
+          <div class="key">gender</div>
           <div>=></div>
-          <div class="text">29</div>
+          <div class="text">male</div>
+          <div class="key">dateofbirth</div>
+          <div>=></div>
+          <div class="text">Nov 1, 1993</div>
           <div class="key">speciality</div>
           <div>=></div>
           <div class="text">PHP Back-end Developer</div>
@@ -40,9 +43,9 @@
         <p>];</p>
       </div>
     </section>
-    <section>
+    <section class="hidden">
       <h1>->Location()</h1><span>//array</span>
-      <div class="border">
+      <div class="border hidden">
         <p>[</p>
         <div class="array-3">
           <div class="key">country</div>
@@ -64,10 +67,10 @@
         <p>];</p>
       </div>
     </section>
-    <section>
+    <section class="hidden">
       <h1>->Experience()</h1><span>//json_decode
         <div class="col-2">
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <div class="json-3">
               <div class="key">job</div>
@@ -85,7 +88,7 @@
             </div>
             <p>},</p>
           </div>
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <div class="json-3">
               <div class="key">job</div>
@@ -100,7 +103,7 @@
             </div>
             <p>},</p>
           </div>
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <div class="json-3">
               <div class="key">job</div>
@@ -115,7 +118,7 @@
             </div>
             <p>},</p>
           </div>
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <div class="json-3">
               <div class="key">job</div>
@@ -129,20 +132,16 @@
               <div class="text">October 2019 - February 2023<br>(3 years 4 months)</div>
               <div class="key">achieve-<br>ments</div>
               <div>:</div>
-              <div class="text">
-                1. Merch design development;<br>2. Software setup when moving to a remote location (due to Covid-19);<br>
-                3. Development of guidelines for work in the department;<br>
-                4. Training and adaptation of new employees in the department
-              </div>
+              <div class="text">1. Merch design development;<br>2. Software setup when moving to a remote location (due to Covid-19);<br>3. Development of guidelines for work in the department;<br>4. Training and adaptation of new employees in the department</div>
             </div>
             <p>}</p>
           </div>
         </div></span>
     </section>
-    <section>
+    <section class="hidden">
       <h1>->Education()</h1><span>//json_decode
         <div class="col-2">
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <p>//BASIC</p>
             <div class="json-3">
@@ -158,7 +157,7 @@
             </div>
             <p>},</p>
           </div>
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <p>//HIGHER</p>
             <div class="json-3">
@@ -177,7 +176,7 @@
             </div>
             <p>},</p>
           </div>
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <p>//COURSES</p>
             <div class="json-3">
@@ -196,7 +195,7 @@
             </div>
             <p>},</p>
           </div>
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <p>//COURSES</p>
             <div class="json-3">
@@ -215,7 +214,7 @@
             </div>
             <p>},</p>
           </div>
-          <div class="border">
+          <div class="border hidden">
             <p>{</p>
             <p>//COURSES</p>
             <div class="json-3">
@@ -236,11 +235,11 @@
           </div>
         </div></span>
     </section>
-    <section>
+    <section class="hidden">
       <h1>->Skills()</h1><span>//Methods
         <div class="col-2">
-          <div class="border">
-            <h1>->HardSkills('Main')</h1><span>//Foreach() {$key. '$val'}</span>
+          <div class="border hidden">
+            <h2>return HardSkills['Main']</h2><span>//Foreach() {$key. '$val'}</span>
             <p>[
               <ol>
                 <li>Programming languages
@@ -286,8 +285,8 @@
             </p>
             <p>];</p>
           </div>
-          <div class="border">
-            <h1>->HardSkills('Language')</h1><span>//array</span>
+          <div class="border hidden">
+            <h2>return HardSkills['Language']</h2><span>//array</span>
             <p>[</p>
             <div class="json-3">
               <div class="key">Russian (ru-RU)</div>
@@ -305,8 +304,8 @@
             </div>
             <p>];</p>
           </div>
-          <div class="border">
-            <h1>->SoftSkills()</h1><span>//Foreach() {$key. '$val'}</span>
+          <div class="border hidden">
+            <h2>return SoftSkills['All']</h2><span>//Foreach() {$key. '$val'}</span>
             <p>[
               <ol>
                 <li>Sociability
@@ -338,6 +337,8 @@
           </div>
         </div></span>
     </section>
+    <script src="js/section.js"></script>
+    <script src="js/translate.js"></script>
     <footer>
       <p class="foot">Made A.Markov with 🤍 in 2023</p>
     </footer>
