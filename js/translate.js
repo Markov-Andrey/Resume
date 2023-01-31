@@ -2,7 +2,7 @@
 let box = document.querySelectorAll('h1')
 box.forEach(function(elem){
   elem.addEventListener("click", function() {
-    parent = elem.parentNode
+    parent = elem.parentNode.parentNode
     border = parent.querySelectorAll('.border')
     border.forEach(function(el){
       el.classList.add('box_rotate')
@@ -20,7 +20,7 @@ div.forEach(function(elem){
 const translateElements = document.querySelectorAll('h1')
 for (let i = 0; i < translateElements.length; i++){
   translateElements[i].onclick = function() {
-    let section = translateElements[i].parentNode
+    let section = translateElements[i].parentNode.parentNode
     let child = section.querySelectorAll('.text')
     SwapText(child)
   }

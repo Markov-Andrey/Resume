@@ -12,6 +12,7 @@ $text: #df9d63
 @import "components/header"
 @import "components/footer"
 @import "components/section"
+@import "components/icon"
 
 *
   margin: 0
@@ -43,6 +44,10 @@ a:hover,h1:hover
   color: $gold
 a:active,h1:active
   color: $orange
+h2
+  display: inline-block
+  font-size: 30px
+  color: $white
 
 
 .box_rotate
@@ -87,6 +92,28 @@ a:active,h1:active
   display: grid
   row-gap: 10px
   grid-template-columns: 30% 5% 65%
+
+.col-title
+  display: inline-grid
+  margin: 10px
+  padding: 10px
+  width: auto
+  grid-template-areas: "b a" "b c"
+  justify-items: start
+  align-items: center
+  gap: 5px
+  background: #1d1d1d
+  border: dotted black 1px
+  border-radius: 10px
+
+.col-title > div
+  grid-area: b
+
+.col-title > h1
+  grid-area: a
+
+.col-title > span
+  grid-area: c
 
 .col-2
   display: grid

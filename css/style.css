@@ -114,9 +114,8 @@ header {
 
 section {
   color: #fff;
-  margin: 50px 10%;
+  margin: 50px 5%;
   padding: 10px 25px;
-  border: 1px solid Black;
   border-radius: 10px;
 }
 
@@ -125,7 +124,7 @@ section p {
 }
 
 section span {
-  display: block;
+  display: inline-block;
   color: #747474;
 }
 
@@ -143,46 +142,6 @@ section div {
   transition: all 0.7s;
 }
 
-.subhidden:nth-child(2) {
-  -webkit-transition-delay: 400ms;
-          transition-delay: 400ms;
-}
-
-.subhidden:nth-child(3) {
-  -webkit-transition-delay: 600ms;
-          transition-delay: 600ms;
-}
-
-.subhidden:nth-child(4) {
-  -webkit-transition-delay: 800ms;
-          transition-delay: 800ms;
-}
-
-.subhidden:nth-child(5) {
-  -webkit-transition-delay: 1000ms;
-          transition-delay: 1000ms;
-}
-
-.subhidden:nth-child(6) {
-  -webkit-transition-delay: 1200ms;
-          transition-delay: 1200ms;
-}
-
-.subhidden:nth-child(7) {
-  -webkit-transition-delay: 1400ms;
-          transition-delay: 1400ms;
-}
-
-.subhidden:nth-child(8) {
-  -webkit-transition-delay: 1600ms;
-          transition-delay: 1600ms;
-}
-
-.subhidden:nth-child(9) {
-  -webkit-transition-delay: 1800ms;
-          transition-delay: 1800ms;
-}
-
 .show {
   opacity: 1;
   -webkit-filter: blur(0);
@@ -197,6 +156,43 @@ section div {
     transition: none;
   }
 }
+.ico-github,
+.ico-info,
+.ico-location,
+.ico-experience,
+.ico-education,
+.ico-skills {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+}
+
+.ico-github {
+  background-image: url("../img/icon-github.svg");
+}
+
+.ico-info {
+  background-image: url("../img/icon-info.svg");
+}
+
+.ico-location {
+  background-image: url("../img/icon-location.svg");
+  background-size: 93%;
+}
+
+.ico-experience {
+  background-image: url("../img/icon-experience.svg");
+}
+
+.ico-education {
+  background-image: url("../img/icon-education.svg");
+}
+
+.ico-skills {
+  background-image: url("../img/icon-skills.svg");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -237,6 +233,12 @@ a:hover, h1:hover {
 
 a:active, h1:active {
   color: #ffae00;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
 }
 
 .box_rotate {
@@ -320,6 +322,42 @@ a:active, h1:active {
   row-gap: 10px;
   -ms-grid-columns: 30% 5% 65%;
   grid-template-columns: 30% 5% 65%;
+}
+
+.col-title {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  margin: 10px;
+  padding: 10px;
+  width: auto;
+      grid-template-areas: "b a" "b c";
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  background: #1d1d1d;
+  border: dotted black 1px;
+  border-radius: 10px;
+}
+
+.col-title > div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: b;
+}
+
+.col-title > h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: a;
+}
+
+.col-title > span {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: c;
 }
 
 .col-2 {
