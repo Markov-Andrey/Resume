@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="btn-up btn-up_hide"></div>
-    <header>
+    <header class="sonp-section sonp-parallax">
       <div class="back" id="up">
         <div>&lt;?php</div>
         <div>use Resume\CurriculumVitae as CV;</div>
@@ -26,7 +26,7 @@
         <p><a class="btn" href="#skills">-&gt;skills()</a></p>
       </div>
     </header>
-    <section class="hidden" id="info">
+    <section class="hidden sonp-section sonp-parallax" id="info">
       <div class="col-title">
         <div class="ico-info hidden"></div>
         <h1>->Info()</h1><span>//array</span>
@@ -55,7 +55,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden" id="location">
+    <section class="hidden sonp-section sonp-parallax" id="location">
       <div class="col-title">
         <div class="ico-location hidden"></div>
         <h1>->Location()</h1><span>//array</span>
@@ -82,7 +82,7 @@
         <p>];</p>
       </div>
     </section>
-    <section class="hidden" id="experience">
+    <section class="hidden sonp-section sonp-parallax" id="experience">
       <div class="col-title">
         <div class="ico-experience hidden"></div>
         <h1>->Experience()</h1><span>//json_decode</span>
@@ -160,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden" id="education">
+    <section class="hidden sonp-section sonp-parallax" id="education">
       <div class="col-title">
         <div class="ico-education hidden"></div>
         <h1>->Education()</h1><span>//json_decode</span>
@@ -260,7 +260,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden" id="skills">
+    <section class="hidden sonp-section sonp-parallax" id="skills">
       <div class="col-title">
         <div class="ico-skills hidden"></div>
         <h1>->Skills()</h1><span>//methods</span>
@@ -377,8 +377,10 @@
     <footer>
       <p class="foot">Made A.Markov with 🤍 in 2023</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="js/section.js"></script>
     <script src="js/translate.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/sonpScroll.js"></script>
   </body>
 </html>
