@@ -1,6 +1,8 @@
 $path-ico: "../img/icon-"
 $square-min: 60
 $square-max: 80
+$photo-min: 185
+$photo-max: 375
 $svg: ".svg"
 
 .ico-github,
@@ -16,6 +18,7 @@ $svg: ".svg"
   width: #{$square-min}px
   height: #{$square-min}px
   background-size: 100%
+  background-repeat: no-repeat
 
 .ico-github
   background-image: url('#{$path-ico}github#{$svg}')
@@ -45,6 +48,21 @@ $svg: ".svg"
 .ico-hard-skills-main
   background-image: url('#{$path-ico}hard-skills-main#{$svg}')
 
+.photo
+  display: inline-block
+  width: #{$photo-min}px
+  height: #{$photo-min}px
+  background-image: url('../img/photo1.png')
+  background-repeat: no-repeat
+  background-size: 101%
+  filter: grayscale(.55)
+  margin-right: 15px
+
+.grid
+  display: grid
+.flex
+  display: flex
+
   // 1024px и меньше
 @media (max-width: 1024px)
   .ico-github,
@@ -58,3 +76,9 @@ $svg: ".svg"
   .ico-hard-skills-main
     width: #{$square-max}px
     height: #{$square-max}px
+  .photo
+    margin: 0 30%
+    width: #{$photo-max}px
+    height: #{$photo-max}px
+  .flex
+    display: block
