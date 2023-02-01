@@ -7,17 +7,17 @@
   </head>
   <body>
     <header>
-      <div>
-        <div class="back">&lt;?php</div>
-        <div class="back">use Resume\CurriculumVitae as CV;</div>
-        <div class="back">use Resume\Page as Page;</div>
-        <div class="back">$markov = new CV();</div>
+      <div class="back">
+        <div>&lt;?php</div>
+        <div>use Resume\CurriculumVitae as CV;</div>
+        <div>use Resume\Page as Page;</div>
+        <div>$markov = new CV();</div>
       </div>
-      <div class="titlePage"><span>Page</span><span>::Show</span><span>('</span><span>About</span><span>')</span></div>
-      <div>
+      <div class="titlePage"><span>Page</span><span>::Show</span><span>('</span><span class="print">About</span><span>')</span></div>
+      <div class="var">
         <div class="variable">$markov</div>
       </div>
-      <div>
+      <div class="menu">
         <p><a class="btn">-&gt;about()</a></p>
         <p><a class="btn">-&gt;contacts()</a></p>
       </div>
@@ -258,7 +258,10 @@
       </div>
       <div class="col-2">
         <div class="border hidden">
-          <h2>HardSkills['Main']</h2><span>//Foreach() {$key. '$val'}</span>
+          <div class="col-title col-sub-title">
+            <div class="ico-hard-skills-main"></div>
+            <h2>HardSkills['Main']</h2><span>//Array</span>
+          </div>
           <p>[
             <ol>
               <li>Programming languages
@@ -305,7 +308,10 @@
           <p>];</p>
         </div>
         <div class="border hidden">
-          <h2>HardSkills['Language']</h2><span>//array</span>
+          <div class="col-title col-sub-title">
+            <div class="ico-hard-skills-language"></div>
+            <h2>HardSkills['Language']</h2><span>//Foreach() {$key. '$val'}</span>
+          </div>
           <p>[</p>
           <div class="json-3">
             <div class="key">Russian (ru-RU)</div>
@@ -324,7 +330,10 @@
           <p>];</p>
         </div>
         <div class="border hidden">
-          <h2>SoftSkills['All']</h2><span>//Foreach() {$key. '$val'}</span>
+          <div class="col-title col-sub-title">
+            <div class="ico-soft-skills"></div>
+            <h2>SoftSkills['All']</h2><span>//Foreach() {$key. '$val'}</span>
+          </div>
           <p>[
             <ol>
               <li>Sociability

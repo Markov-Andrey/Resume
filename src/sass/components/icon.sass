@@ -1,5 +1,6 @@
 $path-ico: "../img/icon-"
-$square50: 50
+$square-min: 60
+$square-max: 80
 $svg: ".svg"
 
 .ico-github,
@@ -7,10 +8,13 @@ $svg: ".svg"
 .ico-location,
 .ico-experience,
 .ico-education,
-.ico-skills
+.ico-skills,
+.ico-soft-skills,
+.ico-hard-skills-language,
+.ico-hard-skills-main
   display: inline-block
-  width: #{$square50}px
-  height: #{$square50}px
+  width: #{$square-min}px
+  height: #{$square-min}px
   background-size: 100%
 
 .ico-github
@@ -31,3 +35,26 @@ $svg: ".svg"
 
 .ico-skills
   background-image: url('#{$path-ico}skills#{$svg}')
+
+.ico-soft-skills
+  background-image: url('#{$path-ico}soft-skills#{$svg}')
+
+.ico-hard-skills-language
+  background-image: url('#{$path-ico}hard-skills-language#{$svg}')
+
+.ico-hard-skills-main
+  background-image: url('#{$path-ico}hard-skills-main#{$svg}')
+
+  // 1024px и меньше
+@media (max-width: 1024px)
+  .ico-github,
+  .ico-info,
+  .ico-location,
+  .ico-experience,
+  .ico-education,
+  .ico-skills,
+  .ico-soft-skills,
+  .ico-hard-skills-language,
+  .ico-hard-skills-main
+    width: #{$square-max}px
+    height: #{$square-max}px

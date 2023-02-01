@@ -24,7 +24,7 @@ $text: #df9d63
 body
   //не выделяемый текст на странице
   background: $page
-  font-size: 20px
+  font-size: 22px
   font-family: "Consolas"
   -moz-user-select: none
   -khtml-user-select: none
@@ -46,7 +46,7 @@ a:active,h1:active
   color: $orange
 h2
   display: inline-block
-  font-size: 30px
+  font-size: 25px
   color: $white
 
 
@@ -72,48 +72,21 @@ h2
 .key:before,.key:after
   content: "'"
 
-.back
-  color: $gray
-  font-size: 25px
-  font-weight: 700
-
-.variable
-  color: $white
-  font-size: 25px
-  font-weight: 700
-.variable:first-letter
-  color: $blue
-
 .array-3
   display: grid
-  grid-template-columns: 10% 3% 20%
+  grid-template-columns: 180px 50px 350px
+  padding: 15px
+.array-3 > div
+  display: flex
+  justify-content: start
 
 .json-3
   display: grid
   row-gap: 10px
   grid-template-columns: 30% 5% 65%
-
-.col-title
-  display: inline-grid
-  margin: 10px
-  padding: 10px
-  width: auto
-  grid-template-areas: "b a" "b c"
-  justify-items: start
-  align-items: center
-  gap: 5px
-  background: #1d1d1d
-  border: dotted black 1px
-  border-radius: 10px
-
-.col-title > div
-  grid-area: b
-
-.col-title > h1
-  grid-area: a
-
-.col-title > span
-  grid-area: c
+.json-3 > div
+  display: flex
+  justify-content: start
 
 .col-2
   display: grid
@@ -124,8 +97,25 @@ h2
   border-collapse: collapse
   border-radius: 10px
   margin: 10px
-  padding: 5px
+  padding: 15px
   background: #1d1d1d
 
 li
   margin-left: 7%
+
+
+// 1024px и меньше
+@media (max-width: 1024px)
+  .array-3
+    font-size: 1.3em
+    display: grid
+    grid-template-columns: 30% 10% 55%
+  .json-3
+    font-size: 1.3em
+    grid-template-columns: 20% 5% 75%
+  .col-2
+    grid-template-columns: 100%
+  h2
+    font-size: 32px
+  ol
+    font-size: 28px

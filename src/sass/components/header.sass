@@ -3,30 +3,64 @@ header
   position: sticky
   top: 0
   display: grid
-  grid-template-columns: 30% 40% 5% 25%
+  grid-template-areas: "a a a b b d" "c c c c c c"
   box-shadow: 1px 10px 30px $header
   background: $header
-  padding: 0 1%
+  padding: 25px
+
+header > .back
+  grid-area: a
+header > .var
+  grid-area: b
+header > .titlePage
+  grid-area: c
+header > .menu
+  grid-area: d
+
+.var
+  display: flex
+  justify-content: end
+
+.menu
+  display: grid
+  align-items: start
+  height: 1em
+
+.back
+  display: flex
+  flex-direction: column
+  color: $gray
+  font-size: 25px
+  font-weight: 500
 
 .titlePage
   display: flex
   justify-content: center
   align-items: center
-  text-align: center
   font-size: 50px
-  animation: go .3s
   color: $white
+  margin-bottom: 20px
+
+.variable
+  color: $gray
+  font-size: 25px
+  font-weight: 700
   
-.titlePage span:nth-child(1)
+.titlePage > span:nth-child(1)
   color: $orange
-.titlePage span:nth-child(4)
+
+.print
   color: $blue
   border-right: 3px solid white
-  animation: cursor 0.75s step-end infinite, printed_text .5s steps(7, end)
   overflow: hidden
   white-space: nowrap
-.titlePage span:nth-child(5)
-  color: $white
+  animation: cursor 0.75s step-end infinite, printed-text .7s steps(5)
+
+@keyframes printed-text
+  from
+    width: 0
+  to
+    width: 3em
 
 @keyframes cursor
   0%
@@ -44,8 +78,49 @@ header
   100%
     opacity: 1
 
-@keyframes printed_text
-  from
-    width: 0
-  to
-    width: 17%
+.col-title
+  display: inline-grid
+  margin: 10px
+  padding: 10px
+  width: auto
+  grid-template-areas: "b a" "b c"
+  justify-items: start
+  align-items: center
+  gap: 5px
+  background: #1d1d1d
+  border: dotted black 1px
+  border-radius: 10px
+
+.col-title > div
+  grid-area: b
+
+.col-title > h1
+  grid-area: a
+  display: flex
+  font-size: 2em
+
+.col-title > h2
+  grid-area: a
+
+.col-title > span
+  grid-area: c
+  display: flex
+  font-size: 1.2em
+
+.col-sub-title
+  border: none
+
+// 1024px и меньше
+@media (max-width: 1024px)
+  header
+    padding-bottom: 50px
+  .back
+    font-size: 15px
+  .titlePage
+    font-size: 75px
+  header
+    grid-template-areas: "a a a a a a" "c c c c c c" "b b b d d d"
+  .col-title
+    justify-content: center
+  .col-title > h1
+    font-size: 2.5em
