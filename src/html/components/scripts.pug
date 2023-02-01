@@ -1,2 +1,4 @@
-script(src='js/section.js')
-script(src='js/translate.js')
+- let files = ['section','translate','scroll']
+
+each val in files
+  script(src="js/" + val + ".js")

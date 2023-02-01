@@ -21,7 +21,6 @@ header > .menu
 .menu
   display: grid
   align-items: start
-  height: 1em
 
 .back
   display: flex
@@ -53,6 +52,43 @@ header > .menu
   white-space: nowrap
   animation: cursor 0.75s step-end infinite, printed-text .7s steps(5)
 
+.col-title
+  display: inline-grid
+  margin: 10px
+  padding: 10px
+  width: auto
+  grid-template-areas: "b a" "b c"
+  justify-items: start
+  align-items: center
+  gap: 5px
+  background: #1d1d1d
+  border: dotted black 1px
+  border-radius: 10px
+
+.col-title > div,
+.col-title > h1,
+.col-title > h2,
+.col-title > span
+  display: flex
+
+.col-title > div
+  grid-area: b
+
+.col-title > h1
+  grid-area: a
+  font-size: 2em
+
+.col-title > h2
+  grid-area: a
+
+.col-title > span
+  grid-area: c
+  font-size: 1.2em
+
+.col-sub-title
+  border: none
+
+//анимации
 @keyframes printed-text
   from
     width: 0
@@ -75,38 +111,6 @@ header > .menu
   100%
     opacity: 1
 
-.col-title
-  display: inline-grid
-  margin: 10px
-  padding: 10px
-  width: auto
-  grid-template-areas: "b a" "b c"
-  justify-items: start
-  align-items: center
-  gap: 5px
-  background: #1d1d1d
-  border: dotted black 1px
-  border-radius: 10px
-
-.col-title > div
-  grid-area: b
-
-.col-title > h1
-  grid-area: a
-  display: flex
-  font-size: 2em
-
-.col-title > h2
-  grid-area: a
-
-.col-title > span
-  grid-area: c
-  display: flex
-  font-size: 1.2em
-
-.col-sub-title
-  border: none
-
 // 1024px и меньше
 @media (max-width: 1024px)
   header
@@ -121,3 +125,7 @@ header > .menu
     justify-content: center
   .col-title > h1
     font-size: 2.5em
+  .menu > p > a,
+  .variable
+    font-size: 40px
+    margin-top: 10px

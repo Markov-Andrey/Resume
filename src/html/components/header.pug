@@ -1,5 +1,8 @@
+- let contents = ['info','location','experience','education','skills']
+
+  .btn-up.btn-up_hide
 header
-  div.back
+  div#up.back
     div &lt;?php
     div use Resume\CurriculumVitae as CV;
     div use Resume\Page as Page;
@@ -13,7 +16,6 @@ header
   div.var
     div.variable $markov
   div.menu
-    p
-      a.btn -&gt;about()
-    p
-      a.btn -&gt;contacts()
+    each val in contents
+      p
+        <a class="btn" href="##{val}">-&gt;#{val}()</a>

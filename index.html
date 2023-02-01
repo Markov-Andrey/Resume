@@ -6,8 +6,9 @@
     <title>$markov-&gt;About</title>
   </head>
   <body>
+    <div class="btn-up btn-up_hide"></div>
     <header>
-      <div class="back">
+      <div class="back" id="up">
         <div>&lt;?php</div>
         <div>use Resume\CurriculumVitae as CV;</div>
         <div>use Resume\Page as Page;</div>
@@ -18,11 +19,14 @@
         <div class="variable">$markov</div>
       </div>
       <div class="menu">
-        <p><a class="btn">-&gt;about()</a></p>
-        <p><a class="btn">-&gt;contacts()</a></p>
+        <p><a class="btn" href="#info">-&gt;info()</a></p>
+        <p><a class="btn" href="#location">-&gt;location()</a></p>
+        <p><a class="btn" href="#experience">-&gt;experience()</a></p>
+        <p><a class="btn" href="#education">-&gt;education()</a></p>
+        <p><a class="btn" href="#skills">-&gt;skills()</a></p>
       </div>
     </header>
-    <section class="hidden">
+    <section class="hidden" id="info">
       <div class="col-title">
         <div class="ico-info hidden"></div>
         <h1>->Info()</h1><span>//array</span>
@@ -51,7 +55,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden">
+    <section class="hidden" id="location">
       <div class="col-title">
         <div class="ico-location hidden"></div>
         <h1>->Location()</h1><span>//array</span>
@@ -78,7 +82,7 @@
         <p>];</p>
       </div>
     </section>
-    <section class="hidden">
+    <section class="hidden" id="experience">
       <div class="col-title">
         <div class="ico-experience hidden"></div>
         <h1>->Experience()</h1><span>//json_decode</span>
@@ -156,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden">
+    <section class="hidden" id="education">
       <div class="col-title">
         <div class="ico-education hidden"></div>
         <h1>->Education()</h1><span>//json_decode</span>
@@ -256,7 +260,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden">
+    <section class="hidden" id="skills">
       <div class="col-title">
         <div class="ico-skills hidden"></div>
         <h1>->Skills()</h1><span>//methods</span>
@@ -375,5 +379,6 @@
     </footer>
     <script src="js/section.js"></script>
     <script src="js/translate.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
