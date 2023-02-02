@@ -33,6 +33,8 @@ const btnUp = {
     });
     // при нажатии на кнопку .btn-up
     document.querySelector('.btn-up').onclick = () => {
+      //sonpScroll - обнуление
+      pageIndex = 0
       // переместим в начало страницы
       window.scrollTo({
         top: 0,

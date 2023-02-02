@@ -431,6 +431,16 @@ section .border:hover {
   display: flex;
 }
 
+.col-title:hover > .ico-github,
+.col-title:hover > .ico-info,
+.col-title:hover > .ico-location,
+.col-title:hover > .ico-experience,
+.col-title:hover > .ico-education,
+.col-title:hover > .ico-skills {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
 @media (max-width: 1024px) {
   .ico-github,
 .ico-info,
@@ -503,6 +513,27 @@ section .border:hover {
     height: 80px;
   }
 }
+.sonp-navigation-menu {
+  position: fixed;
+  right: 0px;
+  bottom: 50%;
+  list-style: none;
+  padding: 20px;
+}
+
+.sonp-navigation-item-style {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  margin: 5px;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.sonp-navigation-item-style:hover {
+  background: #ffd034;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -681,113 +712,4 @@ li {
   ol {
     font-size: 28px;
   }
-}
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-#first {
-  background-color: #3595a1;
-}
-
-#first p {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 37px;
-  padding: 60px;
-}
-
-#first a {
-  width: 160px;
-  margin: auto;
-  display: block;
-  color: #FFF;
-  text-decoration: none;
-  font-family: Impact, "Arial Black", serif;
-  font-size: 50px;
-  text-align: center;
-  background-color: #CF6969;
-}
-
-#first a:hover {
-  background-color: #FFF;
-  color: #CF6969;
-  cursor: pointer;
-}
-
-#second {
-  background-color: cornflowerblue;
-  background-image: url("images/demo.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#second p {
-  font-size: 40px;
-  color: #FFF;
-  padding-left: 300px;
-  font-family: Helvetica, Arial, sans-serif;
-  padding-top: 60px;
-  border-bottom: 1px dashed #FFF;
-  width: 300px;
-}
-
-#second #example {
-  position: relative;
-  float: right;
-  top: 10%;
-  width: auto;
-  padding: 40px;
-  right: 55px;
-}
-
-#finale {
-  background-color: #cf6969;
-  box-shadow: 0 0 66px 34px;
-  -webkit-box-shadow: 0 0 66px 34px;
-  -ms-box-shadow: 0 0 66px 34px;
-}
-
-#finale footer {
-  position: relative;
-  display: table;
-  margin: auto;
-  padding-top: 50px;
-}
-
-#finale footer div {
-  display: table-cell;
-  display: -moz-grid;
-  padding: 20px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-#finale a {
-  text-decoration: none;
-  color: #FFF;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-#finale img {
-  width: 64px;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 66px 34px;
-  -ms-box-shadow: 0 0 66px 34px;
-  -moz-box-shadow: 0 0 66px 34px;
-  border-radius: 90px;
-  -webkit-box-shadow: 0 0 26px 2px #000;
-          box-shadow: 0 0 26px 2px #000;
-}
-
-#finale img:hover {
-  transform: rotate(30deg);
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
 }

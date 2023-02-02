@@ -44,18 +44,10 @@ section#skills.hidden.sonp-section.sonp-parallax
         span //Foreach() {$key. '$val'}
       p [
       div.json-3
-        div.key Russian (ru-RU)
-        div =>
-        div.text Native
-        div.key Belarusian (be-BE)
-        div =>
-        div.text Native
-        div.key English (en-US)
-        div =>
-        div.text Pre-Intermediate
-        div.key Deutsch (de-DE)
-        div =>
-        div.text Elementary
+        +array('Russian (ru-RU)','Native')
+        +array('Belarusian (be-BE)','Native')
+        +array('English (en-US)','Pre-Intermediate')
+        +array('Deutsch (de-DE)','Elementary')
       p ];
     .border.hidden
       div.col-title.col-sub-title
