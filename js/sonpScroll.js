@@ -55,7 +55,7 @@ if (screenWidth > 1024){
   // Scroll events (mouse and keys)
   $(window).bind("keydown.key40 DOMMouseScroll mousewheel",function(event){
   
-      event.preventDefault();
+      //event.preventDefault();
   
       // Update time
       var now = new Date().getTime();
