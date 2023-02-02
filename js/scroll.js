@@ -37,6 +37,7 @@ const btnUp = {
     document.querySelector('.btn-up').onclick = () => {
       //sonpScroll - обнуление
       pageIndex = 0
+      titleJS(); //функция смены заголовка
       // переместим в начало страницы
       window.scrollTo({
         top: 0,

@@ -39,6 +39,7 @@ if (screenWidth > 1024){
           var section = $(this).attr("data-section");
           $("html, body").stop().animate({scrollTop: $(".sonp-section-"+section).offset().top},1000);
           pageIndex = section;
+          titleJS(); //функция смены заголовка
       });
   
   
@@ -95,6 +96,7 @@ if (screenWidth > 1024){
       if(pageIndex < pagesMax-1){
   
           pageIndex++;
+          titleJS(); //функция смены заголовка
   
           var top = $(this).next(".sonp-section-"+pageIndex).offset().top;
           $("html, body").stop().animate({scrollTop: top},1000);
@@ -109,6 +111,7 @@ if (screenWidth > 1024){
       if(pageIndex > 0){
   
           pageIndex--;
+          titleJS(); //функция смены заголовка
   
           var top = $(this).prev(".sonp-section-"+pageIndex).offset().top;
           $("html, body").stop().animate({scrollTop: top},1000);
