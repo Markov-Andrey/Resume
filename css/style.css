@@ -675,6 +675,12 @@ h2 {
   content: "'";
 }
 
+.textA {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
 .key {
   font-weight: 600;
   color: #93e0ff;

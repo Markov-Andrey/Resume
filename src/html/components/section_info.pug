@@ -9,8 +9,14 @@ section#info.hidden.sonp-section.sonp-parallax
       .div
         p.flex [
         div.array-3
+          +array('speciality','PHP Back-end Developer')
           +array('name','Markov Andrei Valerievich')
           +array('gender','male')
-          +array('dateofbirth','Nov 1, 1993')
-          +array('speciality','PHP Back-end Developer')
+          +array('dateOfBirth','Nov 1, 1993')
+          .key phoneNumber
+          div =>
+          a.text.textA(href="tel:+375291506253") +375(29)150-62-53
+          .key gitHub
+          div =>
+          a.text.textA(href="https://github.com/Markov-Andrey" target="_blank") Markov-Andrey
         p.flex ];
