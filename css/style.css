@@ -495,9 +495,50 @@ section .border:hover {
 }
 
 .btn-up_hide {
-  display: none;
+  opacity: 0;
+  -webkit-animation: 0.5s hide forwards;
+          animation: 0.5s hide forwards;
 }
 
+.btn-up-show {
+  opacity: 1;
+  -webkit-animation: 0.5s show forwards;
+          animation: 0.5s show forwards;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   .btn-up:hover {
     background-color: #ffb834;
@@ -528,10 +569,16 @@ section .border:hover {
   margin: 5px;
   border-radius: 90px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sonp-navigation-item-style:hover {
   background: #ffd034;
+}
+
+.sonp-navigation-item-style:active {
+  background: #ffae00;
 }
 
 * {
@@ -543,7 +590,9 @@ section .border:hover {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 body {
-  background: #23242e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#23242e), color-stop(#73a8e4), color-stop(#23242e), color-stop(#35c471), color-stop(#23242e), color-stop(#d9db55), to(#23242e));
+  background: linear-gradient(#23242e, #73a8e4, #23242e, #35c471, #23242e, #d9db55, #23242e);
+  background-size: 360% 360%;
   font-size: 22px;
   font-family: "Consolas";
   -moz-user-select: none;
@@ -711,5 +760,8 @@ li {
   }
   ol {
     font-size: 28px;
+  }
+  body {
+    background-size: 100% 100%;
   }
 }

@@ -18,10 +18,12 @@ const btnUp = {
   show() {
     // удалим у кнопки класс btn-up_hide
     this.el.classList.remove('btn-up_hide');
+    this.el.classList.add('btn-up-show');
   },
   hide() {
     // добавим к кнопке класс btn-up_hide
     this.el.classList.add('btn-up_hide');
+    this.el.classList.remove('btn-up-show');
   },
   addEventListener() {
     // при прокрутке содержимого страницы
