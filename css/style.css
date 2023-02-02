@@ -412,8 +412,8 @@ section .border:hover {
 }
 
 .photo {
-  width: 185px;
-  height: 185px;
+  width: 230px;
+  height: 230px;
   background-image: url("../img/photo1.png");
   -webkit-filter: grayscale(0.55);
           filter: grayscale(0.55);
@@ -429,6 +429,9 @@ section .border:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .col-title:hover > .ico-github,
