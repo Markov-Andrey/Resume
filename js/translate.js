@@ -22,10 +22,13 @@ for (let i = 0; i < translateElements.length; i++){
   translateElements[i].onclick = function() {
     let section = translateElements[i].parentNode.parentNode
     let child = section.querySelectorAll('.text')
+    let h1 = section.querySelector('h1')
     SwapText(child)
+    SwapH1(h1)
   }
 }
 
+//замена текста циклом
 function SwapText(child){
   child.forEach(function (el) {
     for (let i = 0; i < enText.length; i++){
@@ -37,6 +40,50 @@ function SwapText(child){
     }
   })
 }
+
+//замена языка в заголовке c задержкой
+function SwapH1(h1){
+  let ru = "('ru')"
+  let en = "('en')"
+  let sym = 6
+  let x = 0;
+  let txt;
+
+  textH1 = h1.textContent.substring(h1.textContent.length - sym)
+
+  switch (textH1){
+    case ru: 
+      txt = en
+      break
+    case en: 
+      txt = ru
+      break
+  }
+
+  if(txt){
+    h1.textContent = h1.textContent.slice(0, - sym)
+    setTimeout(addLetter, 100);
+  }
+
+  function addLetter(){
+    h1.classList.add('printed')
+    if(x < sym){
+      h1.textContent += txt[x];
+      x += 1
+      setTimeout(addLetter, 100);
+    } else {
+      h1.classList.remove('printed')
+    }
+  }
+}
+function addLetter(){
+  if(x < ru.length){
+    h1.textContent += en[x];
+    x += 1
+    setTimeout(addLetter, 100);
+  }
+}
+
 
 enText = [
   "Markov Andrei Valerievich",
@@ -60,7 +107,7 @@ enText = [
   
   "BURSHTAT",
   "Marketer",
-  "April 2019 - June 2019<br>(3 ​​months)",
+  "April 2019 - June 2019<br>(3 months)",
 
   "Hunting Republician Unitary Enterprise<br>\"BELGOSOKHOTA\"",
   "Hunting management and research engineer",

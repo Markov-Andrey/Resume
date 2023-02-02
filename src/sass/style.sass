@@ -53,6 +53,18 @@ h2
   font-size: 25px
   color: $white
 
+.printed
+  border-right: 3px solid white
+  overflow: hidden
+  white-space: nowrap
+  animation: cursor 0.5s step-end infinite, print-text .5s steps(15)
+
+@keyframes print-text
+  from
+    width: 0
+  to
+    width: 100%
+
 .box_rotate
   animation: .5s animate forwards
 @keyframes animate
