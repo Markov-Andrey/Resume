@@ -440,10 +440,39 @@ section .border:hover {
 .col-title:hover > .ico-experience,
 .col-title:hover > .ico-education,
 .col-title:hover > .ico-skills {
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
+  -webkit-animation: move 0.3s infinite linear;
+          animation: move 0.3s infinite linear;
 }
 
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
 @media (max-width: 1024px) {
   .ico-github,
 .ico-info,

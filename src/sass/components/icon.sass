@@ -68,7 +68,16 @@ $svg: ".svg"
 .col-title:hover > .ico-experience,
 .col-title:hover > .ico-education,
 .col-title:hover > .ico-skills
-  transform: rotate(15deg)
+  //transform: rotate(15deg)
+  animation: move .3s infinite linear
+
+@keyframes move
+  0%
+    transform: rotate(-5deg)
+  50%
+    transform: rotate(5deg)
+  100%
+    transform: rotate(-5deg)
 
   // 1024px и меньше
 @media (max-width: 1024px)
